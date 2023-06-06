@@ -1,5 +1,12 @@
 function fibonacci(num) {
-  // type your code here
+ 
+  let arr = [0,1]
+  for (let i = 0; i < num; i++){
+      arr.push(arr[i] + arr[i+1])
+  }
+  return arr[num]
+
+
 }
 
 if (require.main === module) {
